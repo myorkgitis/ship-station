@@ -101,7 +101,7 @@ class Orders extends BaseEndpoint
     public function createOrders($orders = [])
     {
         return $this->post('createorders', [
-            'form_params' => $orders->toArray()
+            'json' => $orders
         ]);
     }
 
